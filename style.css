@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* bg color gradient */
+body{
+    background-image: url(./img/3.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #F0EEED;
+    /* background-image: linear-gradient(#a1f841, #28f189,#467463,#442111); */
+}
+
+/* logo */
+h1{
+    font-size: 2rem;
+    padding: 10px;
+    transition: all 0.5s ease-in-out ;
+}
+h1:hover{
+    background-color: rgba(228, 145, 228, 0.493);
+    border-radius: 6px;
+}
+/* top-container */
+.top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #443C68;
+    min-height: 10vh;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding:10px;
+
+}
+ul li a{
+    
+    text-decoration: none;
+    font-weight: 800;
+    color: #ECF2FF;
+    padding-left: 10px;
+}
+
+ul li a:hover{
+color: rgb(224, 138, 224);
+text-decoration: underline;
+}
+
+/* flex-box-container */
+ .flex-box-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: chocolate solid 5px; */
+    padding: 10px;
+    margin-top: 10px;
+}
+.flex-box{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(51, 44, 44, 0.349);
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+}
+.flex-box:nth-child(2),.flex-box:last-child{
+    flex:1;
+}
+/* flex-box hover */
+.flex-box:hover{
+    width: 210px;
+    height: 210px;
+    /* border-top:whitesmoke solid 4px ; */
+    box-shadow: rgba(255, 255, 255, 0.308) 1.5px 1.5px 2px 2px;
+    font-weight: 800;
+}
+
+
+
+
+/* grid-box */
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6,1fr);
+    /* border: black solid 5px; */
+    padding: 5px;
+    margin-top: 50px;
+}
+.grid-type{
+    text-align: center;
+    background-color: rgba(51, 44, 44, 0.171);
+    border-radius: 10px;
+
+}
+.type-1{
+    grid-column: span 2;
+
+
+}
+.type-3{
+    grid-row: span 2;
+}
+.type-4{
+    /* grid-row: span 4; */
+    grid-column-start: span 2;
+}
+.type-5{
+    grid-column: span 3;
+}
+
+.type-6{
+    grid-column: span 2;
+}
+/* grid box-hover */
+.type-1:hover{
+    background: linear-gradient(red,blue);
+}
+.type-2:hover{
+    background: linear-gradient(to right top,yellow,green);
+}
+
+
+
